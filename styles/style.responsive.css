@@ -1,0 +1,57 @@
+@media screen and (max-width: 600px) {
+    body {
+      background: #41AB6B;
+    }
+
+    header {
+      position: relative;
+      height: auto;
+    }
+
+    header .headers-wrapper {
+      position: static;
+      margin: 0px;
+      padding: 40px 10px;
+    }
+
+    footer {
+      position: relative;
+      height: auto;
+    }
+
+    footer ul {
+      margin: 0 auto;
+      padding: 40px 0;
+      position: static;
+      width: 180px;
+    }
+
+    footer li {
+      margin: 0 5px;
+    }
+
+    .icon {
+      height: 60px;
+      width: 60px;
+      line-height: 60px;
+      font-size: 24px;
+    }
+
+    .icon:hover {
+        background: #53B279;
+        color: #fff;
+    }
+
+    .icon:active {
+      background: #fff;
+      color: #53B279;
+    }
+
+    .icon:after {
+      display: none;
+    }
+
+    .icon:hover:after {
+      display: none;
+    }
+}
