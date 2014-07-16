@@ -8,10 +8,36 @@
       height: auto;
     }
 
-    header .headers-wrapper {
+    header .vertical-wrapper {
       position: static;
       margin: 0px;
       padding: 40px 10px;
+    }
+
+    .button.button-projects:hover {
+      background: #56A4F4;
+      color: #fff;
+    }
+
+    .button.button-projects:active {
+      border-color: #4593e3;
+      background: #fff;
+      color: #4593E3;
+    }
+
+    .button.button-contact:hover {
+      background: #53B279;
+      color: #fff;
+    }
+
+    .button.button-contact:active {
+      border-color: #41AB6B;
+      background: #fff;
+      color: #41AB6B;
+    }
+
+    article {
+      height: auto;
     }
 
     footer {
@@ -19,10 +45,13 @@
       height: auto;
     }
 
-    footer ul {
+    footer .vertical-wrapper {
       margin: 0 auto;
       padding: 40px 0;
       position: static;
+    }
+
+    footer ul {
       width: 180px;
     }
 
