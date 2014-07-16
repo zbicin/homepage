@@ -6,13 +6,13 @@ html, body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
-h1, h2, h3 {  
+h1, h2, h3, h4, h5 {  
   font-family: "Noto Serif", sans-serif;
   font-style: italic;
   text-align: center;
 }
 
-h3 {
+h3, h5 {
   font-weight: normal;
 }
 
@@ -23,7 +23,7 @@ h3 {
 }
 
 header {
-  height: calc(100% - 40px);
+  min-height: calc(100% - 40px);
   background: #fff;
   position: relative;
   margin: 0;
@@ -88,23 +88,97 @@ header p {
 article {
   background: #4593E3;
   color: #fff;
+  min-height: 580px;
   height: calc(100% - 40px);
   position: relative;
   border-top: 20px solid #56a4f4;
   box-sizing: border-box;
 }
 
+article .vertical-wrapper {
+  left: 0;
+  right: 0;
+  margin: -290px 0 0 0;
+  text-align: center;
+}
+
+article ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 60px 0 0 0;
+}
+
+article li {
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  background-color: #56a4f4;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+article li+li {
+  margin-left: 40px;
+}
+
+article li .card-heads {
+  padding: 250px 10px 10px 10px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  height: 350px;
+  width: 200px;
+  box-sizing: border-box;
+  opacity: 1;
+  transition: all 0.2s ease-in 0;
+  z-index: 1;
+}
+
+article li .card-reverse {
+  position: absolute;
+  height: 350px;
+  width: 200px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: all 0.2s ease-in 0;
+  padding: 10px;
+  z-index: 2;
+  background: #fff;
+  color: #56a4f4;
+}
+
+article li .card-reverse h4 {
+  color: #4593E3;
+}
+
+article li:hover .card-reverse {
+  opacity: 1;
+}
+
+article p {
+  margin: 10px 0;
+  font-size: 0.95em;
+}
+
+article h4 {
+  margin: 10px 0;
+}
+
 footer {
   background: #41AB6B;
   border-top: 20px solid #53B279;
-  height: calc(100% - 40px);
+  min-height: calc(100% - 40px);
   position: relative;
   box-sizing: border-box;
 }
 
-footer h1,
-footer h3 {
+footer h1 {
   color: #fff;
+}
+
+footer h3 {
+  color: #EBF7F0;
 }
 
 footer .vertical-wrapper {
