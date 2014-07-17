@@ -57,6 +57,7 @@ header p {
   border-radius: 4px;
   transition: all 0.2s ease-in 0s;
   border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .button.button-small {
@@ -145,7 +146,7 @@ article .cards li .card-heads {
   width: 200px;
   box-sizing: border-box;
   opacity: 1;
-  transition: all 0.2s ease-in 0;
+  transition: all 0.2s ease-in 0s;
   z-index: 1;
 }
 
@@ -155,7 +156,7 @@ article .cards li .card-reverse {
   width: 200px;
   box-sizing: border-box;
   opacity: 0;
-  transition: all 0.2s ease-in 0;
+  transition: all 0.2s ease-in 0s;
   padding: 10px;
   z-index: 2;
   background: #fff;

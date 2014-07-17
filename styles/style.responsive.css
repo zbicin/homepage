@@ -14,6 +14,10 @@
       padding: 40px 10px;
     }
 
+    header .button+.button {
+      margin: 20px 10px;
+    }
+
     .button.button-projects:hover {
       background: #56A4F4;
       color: #fff;
@@ -38,6 +42,39 @@
 
     article {
       height: auto;
+    }
+
+    article .vertical-wrapper {
+      margin: 0 auto;
+      padding: 40px 0;
+      position: static;
+    }
+
+    article .cards li {
+      display: block;
+      margin: 20px 10px;
+      width: auto;
+      height: auto;
+    }
+
+    article .cards>li+li {
+      margin: 20px 10px;
+    }
+
+    article .cards li .card-heads {
+      display: none;
+    }
+
+    article .cards li .card-reverse {
+      opacity: 1;
+      height: auto;
+      width: auto;
+      position: static;
+    }
+
+    article .cards .card-reverse-buttons {
+      position: static;
+      margin: 20px 0;
     }
 
     footer {
