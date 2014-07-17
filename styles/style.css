@@ -59,13 +59,23 @@ header p {
   border: 1px solid transparent;
 }
 
-.button+.button {
+.button.button-small {
+  font-size: 0.9em;
+  padding: 7.5px 15px;
+  border-radius: 3px;
+}
+
+header .button+.button {
   margin-left: 100px;
 }
 
 .button.button-projects {
   background: #56A4F4;
   box-shadow: 0 4px 0 #4593E3;  
+}
+
+.button.button-small.button-projects {
+  box-shadow: 0 3px 0 #4593E3; 
 }
 
 .button.button-projects:hover {
@@ -77,6 +87,10 @@ header p {
 .button.button-contact {
   background: #53B279;
   box-shadow: 0 4px 0 #41AB6B;
+}
+
+.button.button-small.button-contact {
+  box-shadow: 0 3px 0 #41AB6B;
 }
 
 .button.button-contact:hover {
@@ -102,13 +116,13 @@ article .vertical-wrapper {
   text-align: center;
 }
 
-article ul {
+article ul.cards {
   list-style-type: none;
   padding: 0;
   margin: 60px 0 0 0;
 }
 
-article li {
+article .cards li {
   display: inline-block;
   width: 200px;
   height: 350px;
@@ -118,11 +132,11 @@ article li {
 }
 
 
-article li+li {
+article .cards>li+li {
   margin-left: 40px;
 }
 
-article li .card-heads {
+article .cards li .card-heads {
   padding: 250px 10px 10px 10px;
   position: absolute;
   background-repeat: no-repeat;
@@ -135,7 +149,7 @@ article li .card-heads {
   z-index: 1;
 }
 
-article li .card-reverse {
+article .cards li .card-reverse {
   position: absolute;
   height: 350px;
   width: 200px;
@@ -148,12 +162,23 @@ article li .card-reverse {
   color: #56a4f4;
 }
 
-article li .card-reverse h4 {
+article .cards li .card-reverse h4 {
   color: #4593E3;
 }
 
-article li:hover .card-reverse {
+article .cards li:hover .card-reverse {
   opacity: 1;
+}
+
+article .cards .card-reverse-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+article .cards .card-reverse-buttons .button+.button {
+  margin-top: 20px;
 }
 
 article p {
