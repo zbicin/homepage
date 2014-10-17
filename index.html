@@ -13,12 +13,14 @@
   <meta name="msapplication-tap-highlight" content="no" />
   <link rel="stylesheet" type='text/css' href="styles/style.css">
   <link rel="stylesheet" type="text/css" href="styles/style.responsive.css">
+  <link rel="stylesheet" type="text/css" href="styles/animate.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="scripts/wow.min.js"></script>
   <script src="scripts/script.js"></script>
 </head>
 <body>
   <header>
-    <div class="vertical-wrapper">
+    <div class="vertical-wrapper animated fadeIn" style="-webkit-animation-delay: 0.4s; animation-delay: 0.4s;">
       <h1>Hi, my name is Chris!</h1>
       <h3>I like coding stuff.</h3>
       
@@ -31,10 +33,10 @@
 
   <article id="projects">
     <div class="vertical-wrapper">
-      <h1>My projects</h1>
-      <h3>Things that I'm proud of the most</h3>
+      <h1 class="wow fadeIn" data-wow-offset="100">My projects</h1>
+      <h3 class="wow fadeIn" data-wow-offset="100">Things that I'm proud of the most</h3>
 
-      <ul class="cards">
+      <ul class="cards wow fadeIn" data-wow-offset="100">
         <li>
           <div class="card-heads" style="background-image: url(images/holdon.png);">
             <h4>Hold On Theme</h4>
@@ -110,10 +112,10 @@
 
   <footer id="contact">
     <div class="vertical-wrapper">
-      <h1>Feel free to contact me</h1>
-      <h3>You can find me on LinkedIn, GitHub, Gmail or Twitter.</h3>
+      <h1 class="wow fadeIn" data-wow-offset="100">Feel free to contact me</h1>
+      <h3 class="wow fadeIn" data-wow-offset="100">You can find me on LinkedIn, GitHub, Gmail or Twitter.</h3>
 
-      <ul class="icons">
+      <ul class="icons wow fadeIn" data-wow-offset="100">
         <li><a href="http://lnkd.in/dStt6nu" class="icon"><i class="fa fa-linkedin"></i></a></li><li>
         <a href="http://github.com/zbicin" class="icon"><i class="fa fa-github"></i></a></li><li>
         <a href="#" id="takeThatSpamMachine" class="icon"><i class="fa fa-envelope"></i></a></li><li>

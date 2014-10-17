@@ -9,4 +9,6 @@ $(document).ready(function () {
       }, 500);
     });
   }
+
+  new WOW().init();
 });
