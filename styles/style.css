@@ -55,9 +55,14 @@ header p {
   text-decoration: none;
   color: #fff;
   border-radius: 4px;
-  transition: all 0.2s ease-in 0s;
+  transition: all 0.2s ease-out 0s;
   border: 1px solid transparent;
   white-space: nowrap;
+}
+
+.button.hvr-sweep-to-bottom:before {
+  background: #fff;
+  border-radius: 4px;
 }
 
 .button.button-small {
@@ -72,31 +77,17 @@ header .button+.button {
 
 .button.button-projects {
   background: #56A4F4;
-  box-shadow: 0 4px 0 #4593E3;  
-}
-
-.button.button-small.button-projects {
-  box-shadow: 0 3px 0 #4593E3; 
 }
 
 .button.button-projects:hover {
-  border-color: #4593e3;
-  background: #fff;
   color: #4593E3;
 }
 
 .button.button-contact {
   background: #53B279;
-  box-shadow: 0 4px 0 #41AB6B;
-}
-
-.button.button-small.button-contact {
-  box-shadow: 0 3px 0 #41AB6B;
 }
 
 .button.button-contact:hover {
-  border-color: #41AB6B;
-  background: #fff;
   color: #41AB6B;
 }
 
